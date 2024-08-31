@@ -185,3 +185,42 @@ Set the URL to `http://WANAddress:6969`
 Hit Enter, then close the launcher.
 
 When the Server PC Server + Dedicated Client are both running, run `SPT.Launcher.exe` and log in with a new/existing username.
+
+
+
+# How To Play
+Now that everything is set up, it's time to play!
+
+### Server PC
+Run `SPT.Server.exe`
+
+Wait for the `Started webserver` text to appear
+
+Run the `Start_dedicated_xxxxxx` batch script that is in your SPT install folder
+
+Wait until both consoles have stopped spamming
+
+### Client PC
+⚠️ Make sure the Server PC has been set up for the server to allow the connection ⚠️
+
+Run `SPT.Launcher.exe`
+
+Wait for the UI to update and connect you to the login page
+
+Make a new account, log in to an existing one, or play game.
+
+Once in-game, begin the process by selecting the map you want to play on.
+
+Click next until you pass the Insurance screen.
+
+Next, click `HOST RAID`
+
+<img src="https://github.com/minihazel/FIKA-FPS/blob/main/EscapeFromTarkov_R1KTixNMV1.jpg" width="600" height="350">
+
+Check `Use Dedicated Host`
+
+<img src="https://github.com/minihazel/FIKA-FPS/blob/main/EscapeFromTarkov_pODLB2a1V5.png" width="600" height="450">
+
+Click `START`
+
+Now wait. You should soon be in raid.
