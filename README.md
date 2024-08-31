@@ -8,9 +8,9 @@ Feel free to skip to your preferred parts via the `Navigation hub`
 
 
 # Navigation hub
-- [Skip to Prequisites for LAN](https://github.com/minihazel/FIKA-FPS/main/README.md#prerequisites-lan)
-- [Skip to Prequisites for WAN](https://github.com/minihazel/FIKA-FPS/main/README.md#prerequisites-wan)
-- [Skip to How To Play](https://github.com/minihazel/FIKA-FPS/main/README.md#how-to-play)
+- [Skip to Prequisites for LAN](https://github.com/minihazel/FIKA-FPS?tab=readme-ov-file#navigation-hub#prerequisites-lan)
+- [Skip to Prequisites for WAN](https://github.com/minihazel/FIKA-FPS?tab=readme-ov-file#navigation-hub#prerequisites-wan)
+- [Skip to How To Play](https://github.com/minihazel/FIKA-FPS?tab=readme-ov-file#navigation-hub#how-to-play)
 
 
 # Prerequisites [LAN]
