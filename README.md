@@ -10,16 +10,16 @@ Feel free to skip to your preferred parts via the `Navigation hub`
 # Navigation hub
 Read these sections one by one, top to bottom (choose whether you want WAN or LAN setup)
 
-- [Prequisites](https://github.com/minihazel/FIKA-FPS?tab=readme-ov-fileb#prerequisites-lan)
-- [How To Play](https://github.com/minihazel/FIKA-FPS?tab=readme-ov-file#how-to-play)
+- [Prequisites](https://github.com/minihazel/FIKA-FPS#prerequisites)
+- [How To Play](https://github.com/minihazel/FIKA-FPS#how-to-play)
 
 ### WAN related
-- [Server PC Setup for WAN](https://github.com/minihazel/FIKA-FPS?tab=readme-ov-fileb#server-pc-setup-wan)
-- [Client PC Setup for WAN](https://github.com/minihazel/FIKA-FPS?tab=readme-ov-fileb#client-pc-setup-wan)
+- [Server PC Setup for WAN](https://github.com/minihazel/FIKA-FPS#server-pc-setup-wan)
+- [Client PC Setup for WAN](https://github.com/minihazel/FIKA-FPS#client-pc-setup-wan)
 
 ### LAN related
-- [Server PC Setup for LAN](https://github.com/minihazel/FIKA-FPS?tab=readme-ov-fileb#server-pc-setup-lan)
-- [Client PC Setup for LAN](https://github.com/minihazel/FIKA-FPS?tab=readme-ov-fileb#client-pc-setup-lan)
+- [Server PC Setup for LAN](https://github.com/minihazel/FIKA-FPS#server-pc-setup-lan)
+- [Client PC Setup for LAN](https://github.com/minihazel/FIKA-FPS#client-pc-setup-lan)
 
 
 # Prerequisites
