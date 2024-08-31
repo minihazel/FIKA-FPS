@@ -11,12 +11,17 @@ Feel free to skip to your preferred parts via the `Navigation hub`
 - [Skip to Prequisites for LAN](https://github.com/minihazel/FIKA-FPS?tab=readme-ov-fileb#prerequisites-lan)
 - [Skip to Server PC Setup for LAN](https://github.com/minihazel/FIKA-FPS?tab=readme-ov-fileb#server-pc-setup-lan)
 - [Skip to Client PC Setup for LAN](https://github.com/minihazel/FIKA-FPS?tab=readme-ov-fileb#client-pc-setup-lan)
-- [Skip to Server PC Setup for WAV](https://github.com/minihazel/FIKA-FPS?tab=readme-ov-fileb#server-pc-setup-wan)
+- [Skip to Server PC Setup for WAN](https://github.com/minihazel/FIKA-FPS?tab=readme-ov-fileb#server-pc-setup-wan)
 - [Skip to Client PC Setup for WAN](https://github.com/minihazel/FIKA-FPS?tab=readme-ov-fileb#client-pc-setup-wan)
 - [Skip to How To Play](https://github.com/minihazel/FIKA-FPS?tab=readme-ov-file#how-to-play)
 
 
-# Prerequisites [LAN]
+# Prerequisites
+
+### IF YOU WISH TO PLAY WITH A VPN, REFER TO FIKA'S GUIDE FOR HOSTING VIA VPN: [Host using a VPN](https://github.com/project-fika/fika-documentation?tab=readme-ov-file#host-using-a-vpn)
+
+Guide on how to set up port forwarding [WAN]: [Beginners Guide to Port Forwarding](https://www.youtube.com/watch?v=jfSLxs40sIw)
+
 - [Download the Fika plugin (select latest version)](https://github.com/project-fika/Fika-Plugin/releases)
 - [Download the Fika server (select latest version)](https://github.com/project-fika/Fika-Server/releases)
 - [Download the Fika Dedicated Client plugin (select latest version)](https://github.com/project-fika/Fika-Dedicated/releases)
