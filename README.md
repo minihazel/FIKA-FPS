@@ -1,3 +1,8 @@
+# DISCLAIMER!
+### Support queries will be invalidated if you follow this tutorial. If you need FIKA support, follow THEIR instructions.
+
+Fika Discord link: [discord.gg/project-fika](https://discord.gg/project-fika)
+
 # Prelude
 This is a step-by-step tutorial for those of you who only want to use Fika for PERFORMANCE, and coop is only optional. I will NOT cover how to set up for multiplayer.
 
