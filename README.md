@@ -5,6 +5,10 @@ I will include both a tutorial for _WAN_ and for _LAN_ setups
 
 Feel free to skip to your preferred parts via the `Navigation hub`
 
+### Note
+LAN is for closed networks, where both Server and Client are machines on the same network/WiFi
+
+WAN is for the whole world, where Server and Client are machines on separate networks/WiFi
 
 
 # Navigation hub
@@ -12,6 +16,7 @@ Read these sections one by one, top to bottom (choose whether you want WAN or LA
 
 - [Prequisites](https://github.com/minihazel/FIKA-FPS#prerequisites)
 - [How To Play](https://github.com/minihazel/FIKA-FPS#how-to-play)
+- [Server PC tips for additional performance](https://github.com/minihazel/FIKA-FPS#additional-tips)
 
 ### WAN related
 - [Server PC Setup for WAN](https://github.com/minihazel/FIKA-FPS#server-pc-setup-wan)
@@ -230,3 +235,48 @@ Check `Use Dedicated Host`
 Click `START`
 
 Now wait. You should soon be in raid.
+
+
+
+# Additional tips
+For those of you who want to squeeze that extra juice out of your already hopefully more performant setup, here are a few things you can do to alleviate some of it.
+
+### Process Lasso for CPU (mainly Intel CPUs)
+1. On your Client PC, download [Process Lasso](https://bitsum.com/download-process-lasso/)
+2. Install it
+3. Run the SPT Server, then run the SPT Launcher
+4. Log into any account available on the server
+5. Once in-game, run Process Lasso
+6. Go to `Active processes` (go to `All processes` to search if you cannot find the game there)
+7. Select `EscapeFromTarkov.exe`
+
+<img src="https://github.com/minihazel/FIKA-FPS/blob/main/AnyDesk_WTfO6dHL52.png">
+
+1. Right-click it
+2. Go to `CPU Priority` -> `Always` -> Set it to `High`
+
+<img src="https://github.com/minihazel/FIKA-FPS/blob/main/AnyDesk_LkAO3YJeR1.png">
+
+1. Right click it again
+2. Go to `CPU Affinity` -> `Always` -> `Select CPU Affinity`
+3. Uncheck all checkboxes
+4. Check CPU core 1-4 (or 1-6 if you have that many)
+
+<img src="https://github.com/minihazel/FIKA-FPS/blob/main/AnyDesk_4Q0iGVQhQD.png">
+
+
+
+### Boot.config
+1. On your Server PC, navigate to `/EscapeFromTarkov_Data`
+2. Open `boot.config`
+3. Add `job-worker-count=` to the end of the file, if you haven't already.
+4. At the end of the line you just added, add the number of your threads - 1.
+
+<img src="https://github.com/minihazel/FIKA-FPS/blob/main/notepad++_YZ6PyyxC4M.png">
+
+### Client mods for CPU help
+These are client mods you can install on your Client PC to hopefully alleviate some strain.
+
+- [De-Clutterer](https://hub.sp-tarkov.com/files/file/1785-de-clutterer-updated-by-cj/) (recommended value: `2.0`)
+- [Amand's Graphics](https://hub.sp-tarkov.com/files/file/813-amands-s-graphics/)
+- [RamCleanerInterval](https://hub.sp-tarkov.com/files/file/1827-ram-cleaner-fix/) (install this on your Server PC SPT install *as well*, just in case)
