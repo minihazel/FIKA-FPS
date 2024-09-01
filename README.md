@@ -119,8 +119,6 @@ You should now have a batch (`.bat`) script that starts with `Start_dedicated_xx
 
 Copy/move this file to your SPT install folder (where `SPT.Server.exe` is)
 
-### ⚠️ Every time you finish a raid, you must CLOSE the BepInEx game console on the Server PC and run the `Start_dedicated_xxxxxx` script again ⚠️
-
 
 
 # Client PC Setup [LAN]
@@ -178,8 +176,6 @@ Navigate to `/user/mods/fika-server/assets/scripts`
 You should now have a batch (`.bat`) script that starts with `Start_dedicated_xxxxxx`
 
 Copy/move this file to your SPT install folder (where `SPT.Server.exe` is)
-
-### ⚠️ Every time you finish a raid, you must CLOSE the BepInEx game console on the Server PC and run the `Start_dedicated_xxxxxx` script again ⚠️
 
 
 
