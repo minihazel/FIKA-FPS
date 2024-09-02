@@ -10,10 +10,15 @@ I will include both a tutorial for _WAN_ and for _LAN_ setups
 
 Feel free to skip to your preferred parts via the `Navigation hub`
 
-### Note
-LAN is for closed networks, where both Server and Client are machines on the same network/WiFi
+## Important note
+LAN is for closed networks, where both Server and Client are machines on the same network/WiFi.
 
-WAN is for the whole world, where Server and Client are machines on separate networks/WiFi
+WAN is for the whole world, where Server and Client are machines on separate networks/WiFi.
+
+When your setup is done, you should have TWO (2) separate folders.
+
+- One (1) folder for the Server + Dedicated Client.
+- One (1) folder for the Client.
 
 
 # Navigation hub
