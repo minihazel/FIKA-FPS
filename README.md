@@ -94,7 +94,7 @@ Run `cmd.exe` (Command Prompt) and insert `ipconfig` to find your local IPv4
 
 Copy the IPv4 address. Mine is `172.16.5.4`
 
-Navigate to `/SPT_Data/configs/configs/http.json`
+Navigate to `/SPT_Data/Server/configs/http.json`
 
 Open `http.json` in your preferred text editor
 
@@ -156,7 +156,7 @@ Run `SPT.Server.exe` to let it generate configuration files, then close it after
 
 Get your public WAN IP address. Find it here: [ICanHazIP](https://ipv4.icanhazip.com/)
 
-Navigate to `/SPT_Data/configs/configs/http.json`
+Navigate to `/SPT_Data/Server/configs/http.json`
 
 Open `http.json` in your preferred text editor
 
