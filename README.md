@@ -11,6 +11,9 @@ I will include both a tutorial for _WAN_ and for _LAN_ setups
 Feel free to skip to your preferred parts via the `Navigation hub`
 
 ## Important note
+
+### Make sure you have run the game (and made it to the main menu) on BOTH the Server and Client machines.
+
 LAN is for closed networks, where both Server and Client are machines on the same network/WiFi.
 
 WAN is for the whole world, where Server and Client are machines on separate networks/WiFi.
