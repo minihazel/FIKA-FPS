@@ -16,14 +16,14 @@ Feel free to skip to your preferred parts via the `Navigation hub`
 
 ### Make sure you have run the game (and made it to the main menu) on BOTH the Server and Client machines.
 
-LAN is for closed networks, where both Server and Client are machines on the same network/WiFi.
+LAN is for closed networks, where both Server and Player are machines on the same network/WiFi.
 
-WAN is for the whole world, where Server and Client are machines on separate networks/WiFi.
+WAN is for the whole world, where Server and Player are machines on separate networks/WiFi.
 
 When your setup is done, you should have TWO (2) separate folders.
 
-- One (1) folder for the Server + Dedicated Client.
-- One (1) folder for the Client.
+- One (1) folder for the Server + Headless Client.
+- One (1) folder for the Player.
 
 
 # Navigation hub
@@ -35,11 +35,11 @@ Read these sections one by one, top to bottom (choose whether you want WAN or LA
 
 ### WAN related
 - [Server PC Setup for WAN](https://github.com/minihazel/FIKA-FPS#server-pc-setup-wan)
-- [Client PC Setup for WAN](https://github.com/minihazel/FIKA-FPS#client-pc-setup-wan)
+- [Player PC Setup for WAN](https://github.com/minihazel/FIKA-FPS#client-pc-setup-wan)
 
 ### LAN related
 - [Server PC Setup for LAN](https://github.com/minihazel/FIKA-FPS#server-pc-setup-lan)
-- [Client PC Setup for LAN](https://github.com/minihazel/FIKA-FPS#client-pc-setup-lan)
+- [Player PC Setup for LAN](https://github.com/minihazel/FIKA-FPS#client-pc-setup-lan)
 
 
 # Prerequisites
@@ -50,12 +50,12 @@ Guide on how to set up port forwarding [WAN]: [Beginners Guide to Port Forwardin
 
 - [Download the Fika plugin (select latest version)](https://github.com/project-fika/Fika-Plugin/releases)
 - [Download the Fika server (select latest version)](https://github.com/project-fika/Fika-Server/releases)
-- [Download the Fika Dedicated Client plugin (select latest version)](https://github.com/project-fika/Fika-Dedicated/releases)
+- [Download the Fika Headless Client plugin (select latest version)](https://github.com/project-fika/Fika-Headless/releases)
 
 
 
 ### Network Rules
-Follow these steps on BOTH the Client PC _and_ Server PC to be safe.
+Follow these steps on BOTH the Player PC _and_ Server PC to be safe.
 
 Open your Windows Firewall Advanced Security app
 
@@ -89,15 +89,15 @@ The path to them should be the same as for the Inbound rules
 # Server PC Setup [LAN]
 - Install the Fika plugin into your SPT install folder by dragging and dropping the `BepInEx` folder into it
 - Install the Fika Server mod into your SPT install folder by dragging and dropping the `user` folder into it
-- Install the Fika Dedicated Client plugin into your SPT install folder by dragging and dropping the `BepInEx` folder into it
+- Install the Fika Headless Client plugin into your SPT install folder by dragging and dropping the `BepInEx` folder into it
 
 Run `SPT.Server.exe` to let it generate configuration files, then close it after the `Started the webserver` text appears
 
-Run `cmd.exe` (Command Prompt) and insert `ipconfig` to find your local IPv4
+Run `cmd.exe` (Command Prompt) (or Windows Terminal) and insert `ipconfig` to find your local IPv4
 
-<img src="https://github.com/minihazel/FIKA-FPS/blob/main/cmd_X7kL1mG6ZL.png">
+<img src="https://github.com/minihazel/FIKA-FPS/blob/main/WindowsTerminal_aZljCpK183.png">
 
-Copy the IPv4 address. Mine is `172.16.5.4`
+Copy the IPv4 address. Mine is `10.0.1.228`
 
 Navigate to `/SPT_Data/Server/configs/http.json`
 
@@ -110,14 +110,16 @@ Open `http.json` in your preferred text editor
 
 Navigate to `/user/mods/fika-server/assets/configs`
 
-Open `fika.jsonc`
+Open `fika.jsonc`.
 
-Scroll down to the `dedicated` section
+(If you cannot find `fika.jsonc`, run `SPT.Server.exe`, wait until you see `Started the webserver` text, then try again)
+
+Scroll down to the `headless` section
 
 - Change `"amount"` to `1`.
 - Change `"forceIp"` to `127.0.0.1`
 
-<img src="https://github.com/minihazel/FIKA-FPS/blob/main/AnyDesk_4l6tm7Q2tR.png">
+<img src="https://github.com/minihazel/FIKA-FPS/blob/main/notepad%2B%2B_AxvecGmdTi.png">
 
 Start your SPT Server. The `Started webserver` text should now specify your IPv4
 
@@ -125,7 +127,7 @@ Close your server
 
 Navigate to `/user/mods/fika-server/assets/scripts`
 
-You should now have a batch (`.bat`) script that starts with `Start_dedicated_xxxxxx`
+You should now have a batch (`.bat`) script that starts with `Start_headless_xxxxxx`
 
 Copy/move this file to your SPT install folder (where `SPT.Server.exe` is)
 
@@ -148,14 +150,14 @@ Set the URL to `http://ServerPCPort:6969`
 
 Hit Enter, then close the launcher.
 
-When the Server PC Server + Dedicated Client are both running, run `SPT.Launcher.exe` and log in with a new/existing username.
+When the Server PC Server + Headless Client are both running, run `SPT.Launcher.exe` and log in with a new/existing username.
 
 
 
 # Server PC Setup [WAN]
 - Install the Fika plugin into your SPT install folder by dragging and dropping the `BepInEx` folder into it
 - Install the Fika Server mod into your SPT install folder by dragging and dropping the `user` folder into it
-- Install the Fika Dedicated Client plugin into your SPT install folder by dragging and dropping the `BepInEx` folder into it
+- Install the Fika Headless Client plugin into your SPT install folder by dragging and dropping the `BepInEx` folder into it
 
 Run `SPT.Server.exe` to let it generate configuration files, then close it after the `Started the webserver` text appears
 
@@ -170,9 +172,11 @@ Open `http.json` in your preferred text editor
 
 Navigate to `/user/mods/fika-server/assets/configs`
 
-Open `fika.jsonc`
+Open `fika.jsonc`.
 
-Scroll down to the `dedicated` section
+(If you cannot find `fika.jsonc`, run `SPT.Server.exe`, wait until you see `Started the webserver` text, then try again)
+
+Scroll down to the `headless` section
 
 - Change `"amount"` to `1`.
 - Change `"forceIp"` to `127.0.0.1`
@@ -183,7 +187,7 @@ Close your server
 
 Navigate to `/user/mods/fika-server/assets/scripts`
 
-You should now have a batch (`.bat`) script that starts with `Start_dedicated_xxxxxx`
+You should now have a batch (`.bat`) script that starts with `Start_headless_xxxxxx`
 
 Copy/move this file to your SPT install folder (where `SPT.Server.exe` is)
 
@@ -206,7 +210,7 @@ Set the URL to `http://WANAddress:6969`
 
 Hit Enter, then close the launcher.
 
-When the Server PC Server + Dedicated Client are both running, run `SPT.Launcher.exe` and log in with a new/existing username.
+When the Server PC Server + Headless Client are both running, run `SPT.Launcher.exe` and log in with a new/existing username.
 
 
 
@@ -218,7 +222,7 @@ Run `SPT.Server.exe`
 
 Wait for the `Started webserver` text to appear
 
-Run the `Start_dedicated_xxxxxx` batch script that is in your SPT install folder
+Run the `Start_headless_xxxxxx` batch script that is in your SPT install folder
 
 Wait until both consoles have stopped spamming
 
@@ -239,7 +243,7 @@ Next, click `HOST RAID`
 
 <img src="https://github.com/minihazel/FIKA-FPS/blob/main/EscapeFromTarkov_R1KTixNMV1.jpg" width="600" height="350">
 
-Check `Use Dedicated Host`
+Check `Use Headless Host`
 
 <img src="https://github.com/minihazel/FIKA-FPS/blob/main/EscapeFromTarkov_pODLB2a1V5.png" width="600" height="450">
 
