@@ -25,6 +25,13 @@ When your setup is done, you should have TWO (2) separate folders.
 - One (1) folder for the Server + Headless Client.
 - One (1) folder for the Player.
 
+## Important note #2
+
+The process and setup is the same whether you are installing everything on the same machine, or using two different machines.
+
+Follow the instructions and you will be fine.
+
+
 
 # Navigation hub
 Read these sections one by one, top to bottom (choose whether you want WAN or LAN setup)
@@ -95,24 +102,22 @@ Run `SPT.Server.exe` to let it generate configuration files, then close it after
 
 Run `cmd.exe` (Command Prompt) (or Windows Terminal) and insert `ipconfig` to find your local IPv4
 
-<img src="https://github.com/minihazel/FIKA-FPS/blob/main/WindowsTerminal_aZljCpK183.png">
+<img src="https://github.com/minihazel/FIKA-FPS/blob/main/WindowsTerminal_gtvUD5Kvys.png">
 
-Copy the IPv4 address. Mine is `10.0.1.228`
-
-Navigate to `/SPT_Data/Server/configs/http.json`
-
-Open `http.json` in your preferred text editor
-
-- Change `ip` to `0.0.0.0`
-- Change `backendIp` to your local IPv4 which you copied
-
-<img src="https://github.com/minihazel/FIKA-FPS/blob/main/AnyDesk_0DsbrCZSzR.png">
+Copy the IPv4 address. Mine is `192.168.1.116`
 
 Navigate to `/user/mods/fika-server/assets/configs`
 
 Open `fika.jsonc`.
 
 (If you cannot find `fika.jsonc`, run `SPT.Server.exe`, wait until you see `Started the webserver` text, then try again)
+
+Scroll down to the `server` section
+
+- Change `"backendIp"` to your IPv4 address, mine is `192.168.1.116`.
+- Change `"ip"` to `0.0.0.0` if it isn't already.
+
+<img src="https://github.com/minihazel/FIKA-FPS/blob/main/VSCodium_nTsdm24RcX.png">
 
 Scroll down to the `headless` section
 
@@ -127,7 +132,7 @@ Close your server
 
 Navigate to `/user/mods/fika-server/assets/scripts`
 
-You should now have a batch (`.bat`) script that starts with `Start_headless_xxxxxx`
+You should now have a Powershell (`.ps1`) script that starts with `Start_headless_xxxxxx`
 
 Copy/move this file to your SPT install folder (where `SPT.Server.exe` is)
 
@@ -163,23 +168,25 @@ Run `SPT.Server.exe` to let it generate configuration files, then close it after
 
 Get your public WAN IP address. Find it here: [ICanHazIP](https://ipv4.icanhazip.com/)
 
-Navigate to `/SPT_Data/Server/configs/http.json`
-
-Open `http.json` in your preferred text editor
-
-- Change `ip` to your WAN IP address
-- Change `backendIp` to your WAN IP address
-
 Navigate to `/user/mods/fika-server/assets/configs`
 
 Open `fika.jsonc`.
 
 (If you cannot find `fika.jsonc`, run `SPT.Server.exe`, wait until you see `Started the webserver` text, then try again)
 
+Scroll down to the `server` section
+
+- Change `"ip"` to your WAN IP address.
+- Change `"backendIp"` to WAN IP address.
+
+<img src="https://github.com/minihazel/FIKA-FPS/blob/main/VSCodium_nTsdm24RcX.png">
+
 Scroll down to the `headless` section
 
 - Change `"amount"` to `1`.
 - Change `"forceIp"` to `127.0.0.1`
+
+<img src="https://github.com/minihazel/FIKA-FPS/blob/main/notepad%2B%2B_AxvecGmdTi.png">
 
 Start your SPT Server. The `Started webserver` text should now specify your WAN IP address
 
@@ -187,7 +194,7 @@ Close your server
 
 Navigate to `/user/mods/fika-server/assets/scripts`
 
-You should now have a batch (`.bat`) script that starts with `Start_headless_xxxxxx`
+You should now have a Powershell (`.ps1`) script that starts with `Start_headless_xxxxxx`
 
 Copy/move this file to your SPT install folder (where `SPT.Server.exe` is)
 
@@ -222,9 +229,11 @@ Run `SPT.Server.exe`
 
 Wait for the `Started webserver` text to appear
 
-Run the `Start_headless_xxxxxx` batch script that is in your SPT install folder
+Right-Click the `Start_headless_xxxxxx.ps1` Powershell script that is in your SPT install folder.
 
-Wait until both consoles have stopped spamming
+Click `Run with Powershell`. There will be a 3 or 5 second wait period.
+
+Wait until both consoles have stopped spamming.
 
 ### Client PC
 ⚠️ Make sure the Server PC has been set up for the server to allow the connection ⚠️
@@ -292,6 +301,6 @@ For those of you who want to squeeze that extra juice out of your already hopefu
 ### Client mods for CPU help
 These are client mods you can install on your Client PC to hopefully alleviate some strain.
 
-- [De-Clutterer](https://hub.sp-tarkov.com/files/file/1785-de-clutterer-updated-by-cj/) (recommended value: `2.0`)
+- ~~[De-Clutterer](https://hub.sp-tarkov.com/files/file/1785-de-clutterer-updated-by-cj/) (recommended value: `2.0`)~~ This mod is no longer available for 3.11, whether it will return in a functional state is unclear.
 - [Amand's Graphics](https://hub.sp-tarkov.com/files/file/813-amands-s-graphics/)
 - [RamCleanerInterval](https://hub.sp-tarkov.com/files/file/1827-ram-cleaner-fix/) (install this on your Server PC SPT install *as well*, just in case)
