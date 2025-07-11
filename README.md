@@ -3,7 +3,7 @@
 
 Fika Discord link: [discord.gg/project-fika](https://discord.gg/project-fika)
 
-If you prefer a video tutorial, step-by-step, at a slow pace: [Installing Fika for Performance](https://www.youtube.com/watch?v=LwYeS1IeZTo)
+If you prefer a video tutorial, step-by-step, at a slow pace: [Installing Fika for Performance](https://www.youtube.com/watch?v=VmyaSjbZelg)
 
 NOTE: The video tutorial IS OUT OF DATE. If you use common sense, it should work. If you need careful instructions, do not watch the video tutorial.
 
